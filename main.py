@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow
 from PyQt5 import uic
 
 
-class MyWidget(QMainWindow, Ui_Form):
+class MyWidget(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi('UI.ui', self)
